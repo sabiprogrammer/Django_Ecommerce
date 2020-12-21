@@ -136,7 +136,7 @@ STATIC_URL = '/static/'
 #     os.path.join(BASE_DIR, 'static'),
 # ]
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # THE FOLDER IN YOUR PROJECT DIRECTORY THAT IMAGES GETS UPLOADED TO
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')
