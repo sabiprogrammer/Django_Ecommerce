@@ -74,23 +74,23 @@ WSGI_APPLICATION = 'Dennis.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#     }
-# }
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'd7am55ksp84gob',
-        'HOST': 'ec2-54-211-99-192.compute-1.amazonaws.com',
-        'PORT': 5432,
-        'USER': 'bhgystgyckfqea',
-        'PASSWORD': '2ed8abfda21137be8c84989e6dda05c32ab3a7f47e2fb795bbb6c15e836d78b8'
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'd7am55ksp84gob',
+#         'HOST': 'ec2-54-211-99-192.compute-1.amazonaws.com',
+#         'PORT': 5432,
+#         'USER': 'bhgystgyckfqea',
+#         'PASSWORD': '2ed8abfda21137be8c84989e6dda05c32ab3a7f47e2fb795bbb6c15e836d78b8'
+#     }
+# }
 
 
 # Password validation
