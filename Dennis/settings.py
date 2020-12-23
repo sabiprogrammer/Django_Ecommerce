@@ -11,9 +11,6 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
-# import django_heroku
-# import dj_database_url
-# from decouple import config
 
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -24,13 +21,13 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '6=-!%(8sxhp97-3v2tflz=x0ht4f^!8yo73jm+d^ez30toyyxp'
+SECRET_KEY = os.environ.get('ES')
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
 ALLOWED_HOSTS = ['ecom149.herokuapp.com', '127.0.0.1']
-
 
 # Application definition
 
@@ -86,17 +83,6 @@ DATABASES = {
     }
 }
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'd3cuqebi9drg9h',
-#         'HOST': 'ec2-54-166-114-48.compute-1.amazonaws.com',
-#         'PORT': 5432,
-#         'USER': 'knysciviedacrl',
-#         'PASSWORD': '007fc987d52751e66ff685450a5544474107b88796c441c5c8ccd41a0ac64d1e'
-#     }
-# }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
@@ -150,6 +136,3 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')
 
 # URL ==> HOW YOU WANT THE IMAGE (THE PATH) TO APPEAR IN THE BROWSER
 MEDIA_URL = '/images/'
-
-
-# django_heroku.settings(locals())
